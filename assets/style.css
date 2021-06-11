@@ -67,3 +67,6 @@ a:hover {
     opacity: 1;
 }
 
+#timer {
+    float: right;
+}
