@@ -21,7 +21,7 @@ h1 {
 
 p {
     font-size: 1em;
-    line-height: 2vw;
+    line-height: 1.5em;
     color: #333;
 }
 
@@ -41,27 +41,33 @@ a:hover {
     font-weight: bold;
 }
 
-li, #question-list {
-    background-color: purple;
-    opacity: 80%;
+
+li {
     margin-top: 1vh;
     width: 30vw;
     padding: 10px 0;
-    color: white;
     list-style: none;
     text-align: center;
+    border-bottom: 1px solid purple;
+}
+
+
+#question-list {
+    background-color: purple;
+    opacity: 80%;
+    color: white;
     cursor: pointer;
 }
 
 #container {
     position: absolute;
-    top: 20vh;
+    top: 15vh;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
-    height: 500px;
+    width: 50vw;
+    height: 50vh;
 }
 
 #quiz-container {
@@ -70,11 +76,13 @@ li, #question-list {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 1px solid grey;
-    padding: 20px;
+    padding: 2vh;
+    margin-top: 5vh;
 }
 
-#start-button, #clear, #back-button {
+/*---------------- BUTTONS ----------------*/
+
+#start-button, #clear {
     cursor: pointer;
     background-color: purple;
     opacity: 80%;
@@ -84,11 +92,36 @@ li, #question-list {
     font-weight: bold;
     font-size: 1em;
     padding: 2vh 5vh;
+    width: 35vh;
+}
+
+#clear {
+    margin-top: 3vh;
+}
+
+#back-button {
+    cursor: pointer;
+    margin-top: 2vh;
+    background-color: white;
+    border: 2px solid purple;
+    border-radius: 10px;
+    color: purple;
+    font-size: 1em;
+    padding: 2vh 5vh;
+    width: 35vh;
+    transition: ease-in-out 0.3s;
 }
 
 #start-button:hover, #clear:hover, #back-button:hover, #question-list:hover {
     opacity: 1;
 }
+
+#back-button:hover {
+    color: white;
+    background-color: rgb(180, 83, 180);
+}
+
+/*------------ END OF BUTTONS ------------*/
 
 #timer {
     position: absolute;
@@ -96,9 +129,9 @@ li, #question-list {
 }
 
 #newDiv {
-    margin-top: 20px;
+    margin: 20px 0;
     height: fit-content;
-    border-top: 1px solid grey;
+    border-top: 2px solid grey;
 }
 
 label {
@@ -106,7 +139,16 @@ label {
 }
 
 input {
-    margin-bottom: 20px;
-    width: 50%;
+    margin: 20px 0;
+    width: 35vh;
+    height: 50px;
+    font-size: 1em;
     border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+input:focus {
+    border: 2px solid purple;
+    outline: none;
 }
