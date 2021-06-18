@@ -41,7 +41,7 @@ a:hover {
     font-weight: bold;
 }
 
-li {
+li, #question-list {
     background-color: purple;
     opacity: 80%;
     margin-top: 1vh;
@@ -74,7 +74,7 @@ li {
     padding: 20px;
 }
 
-#start-button {
+#start-button, #clear, #back-button {
     cursor: pointer;
     background-color: purple;
     opacity: 80%;
@@ -86,7 +86,7 @@ li {
     padding: 2vh 5vh;
 }
 
-#start-button:hover, li:hover {
+#start-button:hover, #clear:hover, #back-button:hover, #question-list:hover {
     opacity: 1;
 }
 
