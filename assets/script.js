@@ -168,7 +168,7 @@ function allDone() {
     // submit button
     var createSubmit = document.createElement("button");
     createSubmit.setAttribute("type", "Submit");
-    createSubmit.setAttribute("id", "submit");
+    createSubmit.setAttribute("id", "start-button");
     createSubmit.textContent = "Submit";
 
     quizContainer.appendChild(createSubmit);
