@@ -21,7 +21,7 @@ h1 {
 
 p {
     font-size: 1em;
-    line-height: 2vw;
+    line-height: 1.5em;
     color: #333;
 }
 
@@ -66,8 +66,8 @@ li {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 1000px;
-    height: 500px;
+    width: 50vw;
+    height: 50vh;
 }
 
 #quiz-container {
@@ -76,8 +76,8 @@ li {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 2vh;
+    margin-top: 5vh;
 }
 
 /*---------------- BUTTONS ----------------*/
@@ -92,7 +92,11 @@ li {
     font-weight: bold;
     font-size: 1em;
     padding: 2vh 5vh;
-    width: 40vh;
+    width: 35vh;
+}
+
+#clear {
+    margin-top: 3vh;
 }
 
 #back-button {
@@ -104,7 +108,7 @@ li {
     color: purple;
     font-size: 1em;
     padding: 2vh 5vh;
-    width: 40vh;
+    width: 35vh;
     transition: ease-in-out 0.3s;
 }
 
@@ -136,7 +140,7 @@ label {
 
 input {
     margin: 20px 0;
-    width: 50%;
+    width: 35vh;
     height: 50px;
     font-size: 1em;
     border: 1px solid lightgray;
