@@ -80,6 +80,7 @@ function render(questionIndex) {
     // New for each for question choices
     userChoices.forEach(function (newItem) {
         var listItem = document.createElement("li");
+        listItem.setAttribute("id", "question-list");
         listItem.textContent = newItem;
         quizContainer.appendChild(ulCreate);
         ulCreate.appendChild(listItem);
@@ -149,14 +150,14 @@ function allDone() {
         quizContainer.appendChild(createP2);
     }
 
-    // Label
+    // create label for intial input
     var createLabel = document.createElement("label");
     createLabel.setAttribute("id", "createLabel");
     createLabel.textContent = "Enter your initials: ";
 
     quizContainer.appendChild(createLabel);
 
-    // input
+    // input for intials
     var createInput = document.createElement("input");
     createInput.setAttribute("type", "text");
     createInput.setAttribute("id", "initials");
@@ -164,15 +165,15 @@ function allDone() {
 
     quizContainer.appendChild(createInput);
 
-    // submit
+    // submit button
     var createSubmit = document.createElement("button");
-    createSubmit.setAttribute("type", "submit");
-    createSubmit.setAttribute("id", "Submit");
+    createSubmit.setAttribute("type", "Submit");
+    createSubmit.setAttribute("id", "submit");
     createSubmit.textContent = "Submit";
 
     quizContainer.appendChild(createSubmit);
 
-    // Event listener to capture initials and local storage for initials and score
+    // get initials and local storage for initials and score
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
 
@@ -195,8 +196,9 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // Travels to final page
-            window.location.replace("./HighScores.html");
+            
+            // go to highscore page
+            window.location.replace("highscores.html");
         }
     });
 
