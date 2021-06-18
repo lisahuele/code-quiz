@@ -41,13 +41,37 @@ a:hover {
     font-weight: bold;
 }
 
+li {
+    background-color: purple;
+    opacity: 80%;
+    margin-top: 1vh;
+    width: 30vw;
+    padding: 10px 0;
+    color: white;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+}
+
 #container {
+    position: absolute;
+    top: 20vh;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 500px;
+}
+
+#quiz-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 5% 20% 10% 20%;
-    padding: 2vw;
+    border: 1px solid grey;
+    padding: 20px;
 }
 
 #start-button {
@@ -60,13 +84,29 @@ a:hover {
     font-weight: bold;
     font-size: 1em;
     padding: 2vh 5vh;
-    margin-top: 5vh;
 }
 
-#start-button:hover {
+#start-button:hover, li:hover {
     opacity: 1;
 }
 
 #timer {
-    float: right;
+    position: absolute;
+    right: 0;
+}
+
+#newDiv {
+    margin-top: 20px;
+    height: fit-content;
+    border-top: 1px solid grey;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1px solid lightgray;
 }
