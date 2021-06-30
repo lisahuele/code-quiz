@@ -5,7 +5,7 @@ This is a quiz application using HTML, CSS, and Javascript. This application emp
 
 This project has been deployed to GitHub Pages. To get this project up and running, you can follow the deployment link. Or, download the sources files to use this as a template.
 
-!Code Quiz](./assets/04-web-apis-homework-demo.gif)
+[!Code Quiz](./assets/04-web-apis-homework-demo.gif)
 
 ## Contents
 - [Installation](#installation)
